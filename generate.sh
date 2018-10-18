@@ -1,10 +1,10 @@
 openssl req \
-    -newkey rsa:2048 \
+    -newkey rsa:4096 \
     -x509 \
     -nodes \
-    -keyout server.key \
+    -keyout mycert.key \
     -new \
-    -out server.crt \
+    -out mycert.crt \
     -config ./openssl-custom.cnf \
     -sha256 \
     -days 3650
